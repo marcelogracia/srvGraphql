@@ -1,0 +1,16 @@
+export { AbonadoAvgAggregate } from "./AbonadoAvgAggregate";
+export { AbonadoCount } from "./AbonadoCount";
+export { AbonadoCountAggregate } from "./AbonadoCountAggregate";
+export { AbonadoGroupBy } from "./AbonadoGroupBy";
+export { AbonadoMaxAggregate } from "./AbonadoMaxAggregate";
+export { AbonadoMinAggregate } from "./AbonadoMinAggregate";
+export { AbonadoSumAggregate } from "./AbonadoSumAggregate";
+export { AffectedRowsOutput } from "./AffectedRowsOutput";
+export { AggregateAbonado } from "./AggregateAbonado";
+export { AggregateGrupo } from "./AggregateGrupo";
+export { GrupoAvgAggregate } from "./GrupoAvgAggregate";
+export { GrupoCountAggregate } from "./GrupoCountAggregate";
+export { GrupoGroupBy } from "./GrupoGroupBy";
+export { GrupoMaxAggregate } from "./GrupoMaxAggregate";
+export { GrupoMinAggregate } from "./GrupoMinAggregate";
+export { GrupoSumAggregate } from "./GrupoSumAggregate";

@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "../src/generated"
+}
+
+enum EEspecialidad {
+  PSICOLOGIA
+}
+
+model Abonado {
+  id           Int           @id @default(autoincrement())
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  especialidad EEspecialidad @default(PSICOLOGIA)
+  nombre       String
+  apellido     String
+  razonSocial  String?
+  email        String        @unique
+  cuit         String        @db.VarChar(11)
+  grupo        Grupo[]
+
+}
+
+model Grupo {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  nombre    String
+  activo    Boolean  @default(true)
+  abonado   Abonado  @relation(fields: [abonadoId], references: [id])
+  abonadoId Int
+
+}

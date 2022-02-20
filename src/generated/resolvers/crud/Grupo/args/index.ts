@@ -1,0 +1,12 @@
+export { AggregateGrupoArgs } from "./AggregateGrupoArgs";
+export { CreateGrupoArgs } from "./CreateGrupoArgs";
+export { CreateManyGrupoArgs } from "./CreateManyGrupoArgs";
+export { DeleteGrupoArgs } from "./DeleteGrupoArgs";
+export { DeleteManyGrupoArgs } from "./DeleteManyGrupoArgs";
+export { FindFirstGrupoArgs } from "./FindFirstGrupoArgs";
+export { FindManyGrupoArgs } from "./FindManyGrupoArgs";
+export { FindUniqueGrupoArgs } from "./FindUniqueGrupoArgs";
+export { GroupByGrupoArgs } from "./GroupByGrupoArgs";
+export { UpdateGrupoArgs } from "./UpdateGrupoArgs";
+export { UpdateManyGrupoArgs } from "./UpdateManyGrupoArgs";
+export { UpsertGrupoArgs } from "./UpsertGrupoArgs";
